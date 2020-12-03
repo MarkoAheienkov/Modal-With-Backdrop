@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  border: 1px solid grey;
+  background: transparent;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn:hover {
+  background-color: grey;
+  color: white;
+}
+
+.modal-container {
+  width: 100%;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 40px 40px 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+.modal-title {
+  font-size: 32px;
+  margin:0 auto 10px;
+}
+
+.modal-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-control {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-control.success {
+  color: green;
+}
+
+.modal-control.danger {
+  color: red;
+}
