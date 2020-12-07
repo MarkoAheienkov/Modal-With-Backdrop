@@ -19,8 +19,9 @@ class Modal {
   }
   setMiddle() {
     const {width, height} = this.modal.getBoundingClientRect();
-    const percentY = (document.documentElement.clientHeight/2 - height/2)/document.documentElement.clientHeight;
-    const percentX = (document.documentElement.clientWidth/2 - width/2)/document.documentElement.clientWidth;
+    const {clientHeight, clientWidth} = document.documentElement;
+    const percentY = (clientHeight/2 - height/2)/clientHeight;
+    const percentX = (clientWidth/2 - width/2)/clientWidth;
     this.modal.style.top = percentY*100 + '%';
     this.modal.style.left = percentX*100 + '%';
   }

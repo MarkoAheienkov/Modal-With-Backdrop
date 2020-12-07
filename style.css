@@ -34,6 +34,8 @@ body {
   padding: 40px 40px 20px;
   background: rgb(255, 255, 255);
   border-radius: 15px;
+  animation-name: modal-open;
+  animation-duration: 1s;
 }
 
 .modal-title {
@@ -61,4 +63,18 @@ body {
 
 .modal-control.danger {
   color: red;
+}
+
+@keyframes modal-open {
+  0% {
+    opacity: 0;
+    transform: translateY(-100vh);
+  }
+  60% {
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
